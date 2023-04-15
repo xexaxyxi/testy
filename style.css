@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.curtain {
+    width: 800px;
+    height: 200px;
+    display: flex;
+    transition: 3s;
+}
+
+.curtain_one {
+    width: 500px;
+    height: 100%;
+    background-color: blue;
+    transition: 1s;
+    z-index: 5;
+    position: relative;
+   
+}
+
+.curtain_two {
+    width: 500px;
+    height: 100%;
+    background-color: blue;
+    transition: 1s;
+    z-index: 5;
+    position: relative;
+}
+
+.curtain:hover .curtain_one {
+    transform: rotateY(30deg);
+    transform-origin: left;
+}
+
+.text {
+    position: absolute;
+    z-index: -1;
+    left: 350px;
+    top: 100px;
+    width: 800px;
+    height: 200px;
+
+}
+
+.curtain:hover .curtain_two {
+    transform: rotateY(30deg);
+    transform-origin: right;
+}
